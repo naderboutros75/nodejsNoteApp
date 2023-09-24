@@ -10,8 +10,8 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.use(expressEjsLayouts);
-app.set("layout", "./lauout/main");
-app.set("viewengine", "ejs");
+app.set("layout", "./layouts/main");
+app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
   res.render("index");
